@@ -1,5 +1,5 @@
 # encoding: utf-8
-# copyright: 2017, The Authors
+# copyright: 2018, The Authors
 
 title 'chef-client version'
 
@@ -11,7 +11,7 @@ if os[:family] == 'linux' || 'bsd'
       This is a profile verifies you are running a modern version of chef client.
     '
     describe command('chef-client --version') do
-      its('stdout') { should match (/Chef: 1[3-9]/) }
+      its('stdout') { should match (/Chef: 1[4-9]/) }
     end
   end
 elsif os[:family] == 'windows'
@@ -22,7 +22,7 @@ elsif os[:family] == 'windows'
       This is a profile verifies you are running a modern version of chef client.
     '
     describe command('chef-client --version') do
-      its('stdout') { should match (/Chef: 1[3-9]/) }
+      its('stdout') { should match (/Chef: 1[4-9]/) }
     end
   end
 end

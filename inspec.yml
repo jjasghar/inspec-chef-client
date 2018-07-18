@@ -5,4 +5,4 @@ copyright: The Authors
 copyright_email: jj@chef.io
 license: Apache-2.0
 summary: An InSpec profile to check what version of chef-client you have.
-version: 0.1.0
+version: 0.2.0
